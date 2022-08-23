@@ -4,96 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NLP Project</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <header style="background-color: #004a85;">
-        <div style="text-align: center;color: aliceblue;">
-            Proyecto Paráfrasis<br>
-            Grupo de Ingeniería Lingüistica<br>
-            Instituto de Ingeniería UNAM
-        </div>
-    </header>
-
-    <section class="flex flex-wrap at-20w-full">
-        <div class="w-full md:w-1/2">
-            <form class="w-full flex flex-col md:h-screen"action="{{url_for('Distancia')}}"method="post">
-                
-                <textarea
-                    style="background-color:#f2f2f2;
-                    position: absolute; 
-                    top: 110px;left: 30px;width: auto;height: 170px;border: 3px solid #00ade8;"
-                    id="dat1"
-                    class="w-11/12 md:h-3/4 m-2p-2border-green-600 rounded-1gp-2border self-center justify-center"
-                    name="dat1"
-                    cols="30"rows="10"placeholder="Escribe tu primer texto a comparar"
-                    required="required"
-                ></textarea>
-                <textarea
-                    style="background-color:#f2f2f2;
-                    position: absolute; 
-                    top: 290px;left: 30px;width: auto;height: 170px;border: 3px solid #00ade8;"
-                    id="dat2"
-                    class="w-11/12 md:h-3/4 m-2p-2border-green-600 rounded-1gp-2border self-center justify-center"
-                    name="dat2"
-                    cols="30"rows="10"placeholder="Escribe tu segundo texto a comparar"
-                    required="required"
-                ></textarea>
-                <div class="flex sel-center">
-
-                </div>
-                <div class="flex self-center">
-                    <button 
-                        style="background-color: #004a85;
-                        border: none;
-                        color: white;
-                        padding: 10px 20px;
-                        text-align: center;
-                        text-decoration: none;
-                        display: inline-block;
-                        font-size: 16px;
-                        position: absolute; 
-                        top: 490px;left: 30px;width: 80px;height: 40px;"
-                        type="submit"onclick="Check()">Enviar</button>
-                    <button
-                        style="background-color: #004a85;
-                        border: none;
-                        color: white;
-                        padding: 10px 20px;
-                        text-align: center;
-                        text-decoration: none;
-                        display: inline-block;
-                        font-size: 16px;
-                        position: absolute; 
-                        top: 490px;left: 130px;width: 80px;height: 40px;"
-                        type="reset">Borrar</button>
-                    <input type="radio" id="coseno" name="algoritmo" value="Coseno" style="top:600px;left:290px;">
-                    <label for="coseno">Coseno</label>
-                    <input type="radio" id="jaccard" name="algoritmo" value="Jaccard" style="top:600px;left:290px;">
-                    <label for="jaccard"> Jaccard</label>
-                    <input type="radio" id="dice" name="algoritmo" value="Dice" style="top:600px;left:290px;">
-                    <label for="dice"> Dice</label>
-                    <input type="radio" id="levenshtein" name="algoritmo" value="Levenshtein" style="top:600px;left:290px;">
-                    <label for="levenshtein"> Levenshtein</label>
-                </div>
-                
-            </form>
-        </div>
-        <div class="w-full md:w-1/2">
-            <div class="mt-2flex flex-colw-full md:h-screen">
-
-                <p
-                    style="background-color:#f2f2f2;
-                    position: absolute; 
-                    top: 490px;left: 230px;width: 100px;height: 40px;"
-                    id="dist"
-                    rows="10"
-                    cols="30"name="result"
-                    readonly placeholder="Distancia">{{result}}
-                </p>
-            </div>
-        </div>
-    </section>
+    holi
 </body>
 </html>
