@@ -1,9 +1,10 @@
-from flask import Flask
-app = Flask(__name__)
+from flask import Flask, render_template
+import requests
 
-@app.route("/")
+app = Flask(__name__)
+@app.route("/",methods=["GET","POST"])
 def server_info():
-    return "Hola Mundo Flask"
+    return render_template(index.html)
 
 if __name__ == "__main__":
     app.run()
